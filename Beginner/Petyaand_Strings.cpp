@@ -1,20 +1,31 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-
-int main() {
-
-    string s1, s2;
-    cin >> s1;
-    cin >> s2;
-
-    bool res = lexicographical_compare(s1.begin(),s1.end(), s2.begin(), s2.end());
-    if(res == true) {
-        cout << "-1" <<endl;
-    }else if () {
-        cout << "0" <<endl;
-    }else {
-        cout << "1" <<endl;
+string a, b;
+int main()
+{
+    cin >> a >> b;
+    for (int i = 0; i < a.size(); i++)
+    {
+        if (a[i] < 92)
+        {
+            a[i] += 32;
+        }
+        if (b[i] < 92)
+        {
+            b[i] += 32;
+        }
     }
-
-
+    if (a < b)
+    {
+        cout << -1;
+    }
+    else if (a > b)
+    {
+        cout << 1;
+    }
+    else if (a == b)
+    {
+        cout << 0;
+    }
 }
