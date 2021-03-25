@@ -1,23 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main()
+{
 
-    int n;
-    cin >> n;
+    int T;
+    cin >> T;
 
-    int a,b,c=0,m=0;
+    int a, b, cal = 0, x = 0;
 
-    while (n--)
+    while (T--)
     {
         /* code */
         cin >> a >> b;
-        c -= a;
-        c += b;
-        if(c > m){
-            m =c;
+        cal -= a;
+        cal += b;
+        if (cal > x)
+        {
+            x = cal;
         }
     }
-    cout << m;
-    
+    cout << x;
 }
