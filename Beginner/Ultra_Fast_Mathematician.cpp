@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+    string binary1, binary2;
+    cin >> binary1 >> binary2;
+    for (int i = 0; i < binary1.length(); i++)
+    {
+        /* code */
+        if (binary1[i] == binary2[i])
+        {
+            cout << "0";
+        }
+        else
+        {
+            cout << "1";
+        }
+    }
+}
